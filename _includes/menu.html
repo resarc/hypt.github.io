@@ -1,0 +1,7 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<section class="menu">
+	<a href="/" class="menu-item">Home</a>
+	<a href="/articles" class="menu-item{% if current[1] == 'articles' %} active{% endif %}">Articles</a>
+	<a href="/about/" class="menu-item{% if current[1] == 'about' %} active{% endif %}">About</a>
+</section>

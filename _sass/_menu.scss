@@ -1,0 +1,30 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	position: fixed;
+	right: 0;
+	row-gap: 10px;
+	top: 0;
+	width: max-content;
+
+	.menu-item {
+		background: #00ff00;
+		border-radius: 8px;
+		color: #ff00ff;
+		display: block;
+		font-size: 20px;
+		padding: 6px 10px 8px;
+
+		&:hover {
+			background: #009900;
+			box-shadow: 0px 3px #ff88ff;
+			color: #ffffff;
+		}
+
+		&.active {
+			background: #00ffff;
+			box-shadow: 0px 3px #1111ff;
+		}
+	}
+}
